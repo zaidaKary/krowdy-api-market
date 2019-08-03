@@ -4,7 +4,7 @@ const productRouter = require('./api/recursos/productos/productos.routes');
 
 const app = express();
 
-app.use(bodyParser.json()); // IMPORTANTE!!!
+app.use(bodyParser.json());
 app.use('/productos', productRouter);
 
 app.get('/', (request, response) => {
